@@ -7,8 +7,8 @@ import CasesSummary from "./components/cases-summary/cases-summary.component";
  const App = () => {
   return (
     <div className="App">
-      <Countries />
-      <CasesSummary />
+      <Countries dataSource="https://api.covid19api.com/countries"/>
+      <CasesSummary dataSource="https://api.covid19api.com/summary" getCountriesArray/>
     </div>
   );
 }
